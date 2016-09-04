@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galaxy</title>
+    <meta name="description" content="Panorama — A-Frame">
+    <!-- Production Version, Minified -->
+    <script src="aframe.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-sphere position="5 1.75 -5" radius="0.75" color="#003a65"></a-sphere>
+      <a-sphere position="-2 3 -6" radius="0.75" color="#c1440e"></a-sphere>
+      <a-torus
+        color="#451804"
+        segments-tubular="100"
+        radius="1.5"
+        radius-tubular="0.045"
+        rotation="-45 -35 10"
+        position="-2 3 -6"
+        >
+      </a-torus>
+      <a-sky src="galaxy.jpg" transparent="false" opacity="1" rotation="0 -130 0"></a-sky>
+    </a-scene>
+  </body>
+</html>
