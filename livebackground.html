@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy</title>
+    <meta name="description" content="Panorama — A-Frame">
+    <script src="aframe.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="particles" id="particles">
+      <a-scene>
+        <a-entity position="0 3.2 14">
+            <a-camera></a-camera>
+        </a-entity>
+        <a-entity light="type: point; intensity: 1; distance: 0; decay: 0"
+          position="0 4 14"></a-entity>
+        <a-sphere position="4 3 30" radius="5" color="#003a65"></a-sphere>
+        <a-sphere position="20 2.4 9" radius="2" color="#5b5ddf"></a-sphere>
+        <a-sphere position="-30 3 14" radius="3.5" color="green"></a-sphere>
+        <a-sphere position="-2 3 -6" radius="4" color="#c1440e"></a-sphere>
+        <a-sphere position="18 1.75 11.75" radius=".55" color="#e2e2e2"></a-sphere>
+        <a-torus
+          color="#451804"
+          segments-tubular="100"
+          radius="6"
+          radius-tubular="0.045"
+          rotation="-45 -75 10"
+          position="-2 3 -6"
+          >
+        </a-torus>
+      </a-scene>
+    </div>
+    <script src="particles.min.js"></script>
+    <script src="particles-config.js"></script>
+  </body>
+</html>
