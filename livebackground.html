@@ -3,7 +3,7 @@
   <head>
     <title>Galaxy</title>
     <meta name="description" content="Panorama — A-Frame">
-    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="particles.min.js"></script>
   </head>
@@ -16,20 +16,29 @@
         </a-entity>
         <a-entity light="type: point; intensity: 1; distance: 0; decay: 0"
           position="0 4 14"></a-entity>
-        <a-sphere position="4 3 30" radius="5" color="#003a65"></a-sphere>
-        <a-sphere position="20 2.4 9" radius="2" color="#5b5ddf"></a-sphere>
-        <a-sphere position="-30 3 14" radius="3.5" color="green"></a-sphere>
-        <a-sphere position="-2 3 -6" radius="4" color="#c1440e"></a-sphere>
-        <a-sphere position="18 1.75 11.75" radius=".55" color="#e2e2e2"></a-sphere>
-        <a-torus
-          color="#c2bf0a"
-          segments-tubular="100"
-          radius="6"
-          radius-tubular="0.045"
-          rotation="-45 -75 10"
-          position="-2 3 -6"
-          >
-        </a-torus>
+
+          <!-- large planet behind -->
+          <a-sphere position="4 3 100" radius="5" color="#2f8187"></a-sphere>
+
+          <!-- planet to the left -->
+          <a-sphere position="-50 3 14" radius="3.5" color="#7e8d8f"></a-sphere>
+
+          <!-- planet with moon to the right -->
+          <a-sphere position="35 2.4 9" radius="2" color="#5b5ddf"></a-sphere>
+          <a-sphere position="32 1.75 11.7" radius=".55" color="#e2e2e2"></a-sphere>
+
+          <!-- saturn-esque planet and ring straight ahead-->
+          <a-sphere position="-2 3 -20" radius="4" color="#c1440e"></a-sphere>
+          <a-torus
+            color="#c2bf0a"
+            segments-tubular="100"
+            radius="6"
+            radius-tubular="0.045"
+            rotation="-45 -75 10"
+            position="-2 3 -20"
+            >
+          </a-torus>
+
       </a-scene>
     <script src="particles-config.js"></script>
   </body>
